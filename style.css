@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF8F0; 
+    color: #4A4A4A;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#navbar {
+    background-color: #FFD6E0; 
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+}
+
+#navbar a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #FF7AA3;
+}
+
+
+header {
+    padding: 40px 20px;
+}
+
+#title span {
+    display: inline-block;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: popUp 0.8s forwards;
+}
+
+#title span:nth-child(1) { animation-delay: 0s; }
+#title span:nth-child(2) { animation-delay: 0.1s; }
+#title span:nth-child(3) { animation-delay: 0.2s; }
+#title span:nth-child(4) { animation-delay: 0.3s; }
+#title span:nth-child(5) { animation-delay: 0.4s; }
+#title span:nth-child(6) { animation-delay: 0.5s; }
+#title span:nth-child(7) { animation-delay: 0.6s; }
+#title span:nth-child(8) { animation-delay: 0.7s; }
+#title span:nth-child(9) { animation-delay: 0.8s; }
+
+@keyframes popUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Images */
+img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease, opacity 1s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+button {
+    font-family: 'Patrick Hand', cursive;
+    background-color: #FFB6C1; 
+    color: #4A4A4A;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF7AA3;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.tips-section {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.tips-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-section li {
+    background-color: #FFF0F5; 
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tips-section li:hover {
+    transform: scale(1.03);
+    background-color: #FFD6E0;
+}
+
+
+@media screen and (max-width: 600px) {
+    img {
+        width: 80%;
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
