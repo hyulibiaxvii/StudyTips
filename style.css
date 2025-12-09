@@ -67,7 +67,6 @@ p {
     margin-bottom: 25px;
 }
 
-/* Images */
 img {
     width: 50%;
     max-width: 500px;
@@ -147,3 +146,4 @@ button:hover {
         padding: 10px 20px;
     }
 }
+
